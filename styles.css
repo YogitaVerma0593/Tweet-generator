@@ -1,0 +1,66 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #110030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    background: none;
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.tweet-card {
+    background:linear-gradient( to right,  #7a56d6ad,
+    rgb(120, 65, 249),#7a56d6ad,rgb(82, 82, 244),#7a56d6ad);
+    color: white;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tweet-card:hover {
+    box-shadow: 10px 10px 10px #a658ff;
+}
+
+.tweet-card p {
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+.tweets-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.tweet-card {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
